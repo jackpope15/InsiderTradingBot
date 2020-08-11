@@ -46,4 +46,4 @@ with open('InsiderStocks.csv', 'w') as csv_file:
                 date = text[0][:-8]
                 csv_writer.writerow([date, stock_id, amount])
         except:
-            print('Invalid Dollar Amount')
+            print('Unable to parse dollarAmount into a viable float')
